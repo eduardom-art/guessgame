@@ -35,6 +35,7 @@ while True:
             print(f"Attempts left: {attempts}")
         else:
             print(f"Game Over! The number was {secret_number}. 💀")
+<<<<<<< HEAD
 
     while True:
         play_again = input("Do you want to play again? (yes/no): ").lower()
@@ -47,5 +48,20 @@ while True:
             print("Thanks for playing! Goodbye! 👋")
             exit()
             
+=======
+            break
+
+    while True:
+        play_again = input("Do you want to play again? (yes/no): ").lower()
+        if play_again == "yes":
+            secret_number = random.randint(1, 20)
+            attempts = 5
+            print("Great! A new number has been generated. Let's play again!")
+            print(f"You have {attempts} attempts left.")
+            break
+        elif play_again == "no":
+            print("Thanks for playing! Goodbye! 👋")
+            exit()
+>>>>>>> d85474ecb0c363715f85505ce051a5847033c967
         else:
             print("Invalid input! Please enter 'yes' or 'no'.")
